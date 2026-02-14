@@ -45,7 +45,7 @@ func main() {
 
 	mnuAbout := fyne.NewMenu(c.T("About"),
 		fyne.NewMenuItem(c.T("Check Update"), func() {
-			url, err := url.Parse("https://mugomes.github.io")
+			url, err := url.Parse("https://github.com/mugomes/micheckhash/releases")
 			if err == nil {
 				a.OpenURL(url)
 			}
