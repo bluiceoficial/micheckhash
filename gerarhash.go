@@ -61,7 +61,7 @@ func showGerarHash(a fyne.App) {
 		ctnArquivo,
 	)
 
-	flow.SetResize(ctnArquivo, fyne.NewSize(50, 0))
+	flow.Resize(ctnArquivo, 50, 0)
 
 	var btnGerar *widget.Button
 	var txtInfo *widget.Entry
@@ -104,7 +104,7 @@ func showGerarHash(a fyne.App) {
 		layout.NewSpacer(),
 	)
 
-	flow.SetGap(btnGerar, fyne.NewPos(0, 29))
+	flow.Gap(btnGerar, 0, 29)
 
 	txtInfo = widget.NewEntry()
 	txtInfo.Disable()
@@ -125,7 +125,7 @@ func showGerarHash(a fyne.App) {
 		txtInfo, btnSave,
 	)
 
-	flow.SetResize(btnSave, fyne.NewSize(57, 36))
+	flow.Resize(btnSave, 57, 36)
 
 	w.SetContent(flow.Container)
 	w.Show()
