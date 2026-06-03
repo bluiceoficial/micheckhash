@@ -1,0 +1,47 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,54,36)
+  Font = Font["11"]
+  Text = ("Generate Hash")
+  Icon = Picture["micheckhash.png"]
+  Resizable = False
+  { Label1 Label
+    MoveScaled(1,1,82,3)
+    Font = Font["Bold"]
+    Text = ("Hash Type")
+  }
+  { txtArquivo ButtonBox
+    MoveScaled(1,15,50,4)
+    ReadOnly = True
+  }
+  { cboTipoHash ComboBox
+    MoveScaled(1,5,50,4)
+    #Translate = False
+    ReadOnly = True
+    List = ["MD5", "SHA1", "SHA256", "SHA512"]
+    Text = "MD5"
+  }
+  { Label3 Label
+    MoveScaled(1,11,82,3)
+    Font = Font["Bold"]
+    Text = ("File")
+  }
+  { btnVerificar Button
+    MoveScaled(14,21,26,5)
+    Text = ("Generate")
+  }
+  { Label5 Label
+    MoveScaled(2,27,82,3)
+    Font = Font["Bold"]
+    Text = ("Hash:")
+  }
+  { txtHash TextBox
+    MoveScaled(2,30,38,4)
+    ReadOnly = True
+  }
+  { btnSalvar Button
+    MoveScaled(41,30,11,4)
+    Text = ("Save")
+  }
+}

@@ -1,9 +1,9 @@
-// Copyright (C) 2024-2026 Murilo Gomes Julio
+// Copyright (C) 2026 Murilo Gomes Julio
 // SPDX-License-Identifier: GPL-2.0-only
 
-// Site: https://mugomes.github.io
+// Site: https://www.bluice.com.br
 
-package controls
+package main
 
 import (
 	"crypto/md5"
@@ -13,9 +13,11 @@ import (
 	"encoding/hex"
 	"hash"
 	"io"
-)	
+	"os"
+	"fmt"
+)
 
-func GetHash(sTipoHash string, file io.Reader) string {
+func getHash(sTipoHash string, file io.Reader) string {
 	var hashsum hash.Hash
 
 	switch sTipoHash {
@@ -37,4 +39,17 @@ func GetHash(sTipoHash string, file io.Reader) string {
 
 	hashInBytes := hashsum.Sum(nil)
 	return hex.EncodeToString(hashInBytes)
+}
+
+func main() {
+	args := os.Args
+	if len(args) > 2  {
+		file, _ := os.Open(args[1])
+		defer file.Close()
+
+		fmt.Println(getHash(args[2], file))
+		return
+	}
+
+	fmt.Println("File not found!")
 }

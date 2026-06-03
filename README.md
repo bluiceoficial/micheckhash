@@ -1,28 +1,20 @@
 # MiCheckHash
 
-MiCheckHash is a software for checking and generating file hashes.
+Check and generate hash.
 
 ## Information
 
- - [Page MiCheckHash](https://github.com/mugomes/micheckhash)
+- [Page MiCheckHash](https://www.mugomes.com.br/2025/07/micheckhash.html)
 
-## System Requirement
+## Support
 
-### Linux
-
- - Ubuntu 24.04 or higher
- - Graphics: GPU with OpenGL support (required for 3D acceleration)
-
-### Windows
-
-- Windows 10 or higher
-- Graphics: GPU with OpenGL support (required for 3D acceleration)
+- [Page MiCheckHash](https://www.mugomes.com.br/2025/07/micheckhash.html#comprar)
 
 ## License
 
 The MiCheckHash is provided under:
 
-[SPDX-License-Identifier: GPL-2.0-only](https://github.com/mugomes/micheckhash/blob/main/LICENSE)
+[SPDX-License-Identifier: GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-only.html)
 
 Beign under the terms of the GNU General Public License version 2 only.
 

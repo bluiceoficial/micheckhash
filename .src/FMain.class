@@ -1,0 +1,79 @@
+' Gambas class file
+
+' Copyright (C) 2025-2026 Murilo Gomes Julio
+' SPDX-License-Identifier: GPL-2.0-only
+
+' Site: https://www.bluice.com.br
+
+Public APPDIR As String = ""
+
+Public Sub mnuApoie_Click()
+  
+  Shell "xdg-open \"https://github.com/bluiceoficial/micheckhash/\""
+  
+End
+
+Public Sub mnuSobre_Click()
+  
+  FAbout.Show()
+  
+End
+
+Public Sub btnVerificar_Click()
+  
+  Dim sHash As String
+  Dim sResult As String[]
+  Dim sFileHash As String
+  
+  If txtArquivo.Text = "" Or txtHashDev.Text = "" Then 
+    Message.Warning(("Fill in all fields before checking!"))
+  Else
+    If Exist(txtArquivo.Text) Then
+      Shell APPDIR & "/usr/share/micheckhash/tools/generatehash \"" & txtArquivo.Text & "\" " & Lower(cboTipoHash.Text) Wait To sHash
+      sResult = Split(Trim(sHash), " ")
+      
+      sFileHash = Trim(sResult[0])
+      
+      If sFileHash = txtHashDev.Text Then
+        Message.Info(("Success!"))
+      Else 
+        Message.Error(("Different!"))
+      Endif
+    Else 
+      Message.Error(("File not found!"))
+    Endif
+  Endif
+  
+End
+
+Public Sub mnuGerarHash_Click()
+  
+  FGerarHash.Show()
+  
+End
+
+Public Sub txtArquivo_Click()
+  
+  Dialog.Title = ("Select File")
+  If Dialog.OpenFile() = False Then 
+    txtArquivo.Text = Dialog.Path
+  Endif
+  
+End
+
+Public Sub Form_Open()
+  APPDIR = Application.Env["APPDIR"]
+  Print APPDIR
+End
+
+Public Sub URLLabel1_Click()
+
+  mnuApoie_Click
+
+End
+
+Public Sub mnuCheckUpdate_Click()
+
+  Shell "xdg-open \"https://github.com/bluiceoficial/micheckhash/\""
+
+End
