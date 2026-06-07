@@ -9,7 +9,7 @@ Check and generate hash.
 
 - https://github.com/sponsors/bluiceoficial
 
-## Official MiAntivirus link
+## Official MiCheckHash link
 
 - https://github.com/bluiceoficial/micheckhash
 
