@@ -2,13 +2,24 @@
 
 Check and generate hash.
 
-## Information
-
-- [Page MiCheckHash](https://www.mugomes.com.br/2025/07/micheckhash.html)
+## Screenshots
+<img height="300" alt="image" src="https://github.com/user-attachments/assets/1b345211-4809-4dc4-9b94-ba97e044dc5e" />
 
 ## Support
 
-- [Page MiCheckHash](https://www.mugomes.com.br/2025/07/micheckhash.html#comprar)
+- https://github.com/sponsors/bluiceoficial
+
+## Official MiAntivirus link
+
+- https://github.com/bluiceoficial/micheckhash
+
+### Official Author link
+
+- https://www.bluice.com.br
+
+### Links to Third-Party Resources Used
+
+- https://gambaswiki.org/website/en/main.html
 
 ## License
 
