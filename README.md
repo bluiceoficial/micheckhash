@@ -1,5 +1,8 @@
 # MiCheckHash
 
+> [!NOTE]
+> This repository has been migrated to Codeberg, please see: https://codeberg.org/bluice/micheckhash
+
 Check and generate hash.
 
 ## Screenshots
