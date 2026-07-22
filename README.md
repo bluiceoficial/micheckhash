@@ -1,34 +1,30 @@
 # MiCheckHash
 
-> [!NOTE]
-> This repository has been migrated to Codeberg, please see: https://codeberg.org/bluice/micheckhash
+MiCheckHash is a software for checking and generating file hashes.
 
-Check and generate hash.
+<img height="300" alt="image" src="https://github.com/user-attachments/assets/7a70f131-562d-4920-98fb-a66df86f8f05" />
 
-## Screenshots
-<img height="300" alt="image" src="https://github.com/user-attachments/assets/1b345211-4809-4dc4-9b94-ba97e044dc5e" />
+## Information
 
-## Support
+ - [Page MiCheckHash](https://github.com/bluiceoficial/micheckhash)
 
-- https://github.com/sponsors/bluiceoficial
+## System Requirement
 
-## Official MiCheckHash link
+### Linux
 
-- https://github.com/bluiceoficial/micheckhash
+ - Ubuntu 24.04 or higher
+ - Graphics: GPU with OpenGL support (required for 3D acceleration)
 
-### Official Author link
+### Windows
 
-- https://www.bluice.com.br
-
-### Links to Third-Party Resources Used
-
-- https://gambaswiki.org/website/en/main.html
+- Windows 10 or higher
+- Graphics: GPU with OpenGL support (required for 3D acceleration)
 
 ## License
 
 The MiCheckHash is provided under:
 
-[SPDX-License-Identifier: GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-only.html)
+[SPDX-License-Identifier: GPL-2.0-only](https://github.com/bluiceoficial/micheckhash/blob/main/LICENSE)
 
 Beign under the terms of the GNU General Public License version 2 only.
 
