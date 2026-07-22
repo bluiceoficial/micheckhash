@@ -21,7 +21,7 @@ import (
 	"github.com/bluiceoficial/blusmartflow"
 )
 
-const VERSION_APP string = "6.1.1"
+const VERSION_APP string = "7.0.0"
 
 func main() {
 	c.LoadTranslations()
